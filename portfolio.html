@@ -3,47 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio | Ali Khalilabadi</title>
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">My Website</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ali Khalilabadi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <h1>My Portfolio</h1>
-        <p>Here are some of the projects I’ve worked on:</p>
-        <ul>
-            <li><a href="https://project1-link.com">Project 1</a> - Description of project 1.</li>
-            <li><a href="https://project2-link.com">Project 2</a> - Description of project 2.</li>
-            <li><a href="https://project3-link.com">Project 3</a> - Description of project 3.</li>
-        </ul>
-    </div>
+    <section class="container my-5">
+        <h1 class="text-center">Portfolio</h1>
+        <p class="text-center">Here are some of the key projects and works I've been involved in:</p>
 
-    <div class="container mt-3">
-        <a href="about.html" class="btn btn-primary">About Me</a>
-        <a href="contact.html" class="btn btn-secondary">Contact</a>
-    </div>
+        <div class="row">
+            <!-- First Project -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Finance Server for Beta Saramad Industrial Group</h5>
+                        <p class="card-text">Designed and implemented a secure and efficient finance server that streamlined financial processes for a major industrial organization.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more projects in a similar format -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Platform</h5>
+                        <p class="card-text">Developed a scalable e-commerce platform integrating secure payment gateways and user-friendly interfaces.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Work Section -->
+    <section class="container my-5">
+        <h2 class="text-center">All Work</h2>
+        <p class="text-center">Explore the complete list of my professional achievements:</p>
+        <ul class="list-group">
+            <li class="list-group-item">Data recovery solutions for various clients</li>
+            <li class="list-group-item">Network management projects for organizations</li>
+            <li class="list-group-item">Mikrotik switch programming and IP camera installation</li>
+            <li class="list-group-item">VOIP technology integration for corporate setups</li>
+            <li class="list-group-item">Web design projects using WordPress, HTML, CSS, and JavaScript</li>
+            <li class="list-group-item">SQL and MySQL database management systems for business applications</li>
+        </ul>
+    </section>
+
+    <footer class="text-center mt-5 py-3 bg-dark text-light">
+        <p>© 2024 Ali Khalilabadi | All rights reserved.</p>
+    </footer>
 
     <script src="bootstrap.bundle.min.js"></script>
 </body>

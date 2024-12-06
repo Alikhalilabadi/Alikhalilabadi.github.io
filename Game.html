@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game | Ali Khalilabadi</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ali Khalilabadi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="game.html">Game</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <h1 class="text-center">Simple Game</h1>
+        <p class="text-center">Play a fun and interactive game directly on this page!</p>
+        <div id="game-container" class="text-center my-4">
+            <!-- Add your game logic here -->
+            <button class="btn btn-primary" id="start-game">Start Game</button>
+            <div id="game-output" class="mt-3"></div>
+        </div>
+    </section>
+
+    <footer class="text-center mt-5 py-3 bg-dark text-light">
+        <p>© 2024 Ali Khalilabadi | All rights reserved.</p>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        // Example JavaScript for a simple game
+        const startGameButton = document.getElementById('start-game');
+        const gameOutput = document.getElementById('game-output');
+
+        startGameButton.addEventListener('click', () => {
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            gameOutput.textContent = `Your random number is: ${randomNumber}`;
+        });
+    </script>
+</body>
+</html>
