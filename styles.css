@@ -10,7 +10,7 @@ body {
 
 /* Header with Background Image */
 header {
-    background-image: url('https://alikhalilabadi.github.io/Assets/Images/123.jpg'); /* Add your image URL */
+    background-image: url('https://alikhalilabadi.github.io/Assets/Images/123.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
