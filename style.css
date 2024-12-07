@@ -1,15 +1,15 @@
 /* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url('./Assets/Images/123.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('C:/Users/alikh/OneDrive/Desktop/personal-website/Assets/Images/123.jpg'); /* Updated path */
+    background-size: cover; /* Make the image cover the entire background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
     color: #212529;
 }
+
 
 /* Header Banner Styling */
 .header-banner {
