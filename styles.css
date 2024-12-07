@@ -32,14 +32,18 @@ body {
     color: white;
 }
 
-/* Header Banner */
+/* Header Banner with Background Image (Only on Home Page) */
 header.header-banner {
     background-image: url('https://alikhalilabadi.github.io/Assets/Images/123.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
 }
 
+/* Other Header Styles */
 header.header-banner h1 {
     font-size: 3rem;
     font-weight: bold;
