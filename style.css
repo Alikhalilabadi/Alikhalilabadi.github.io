@@ -28,11 +28,11 @@ h1, h2, h3, h4 {
 
 /* Header Banner */
 .header-banner {
-    background-image: url("123.jpg");
+    background-image: url('your-image-path.jpg'); /* Replace with your image's path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh; /* Adjust height as needed */
+    height: 60vh; /* You can adjust the height */
     display: flex;
     justify-content: center;
     align-items: center;
