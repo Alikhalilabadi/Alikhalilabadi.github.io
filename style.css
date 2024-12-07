@@ -1,7 +1,7 @@
 /* Hero Section with Background Image */
 .hero-section {
     position: relative;
-    background-image: url('./YTiaCiAS9kJCbgPt7ODkt.jpg'); /* Adjust path if needed */
+    background-image: url('./YTiaCiAS9kJCbgPt7ODkt.jpg'); /* Ensure this path is correct */
     background-size: cover;
     background-position: center;
     height: 100vh;
