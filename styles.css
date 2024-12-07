@@ -1,7 +1,7 @@
 /* Hero Section with Background Image */
 .hero-section {
     position: relative;
-    background-image: url('C:\Users\alikh\OneDrive\Desktop\personal-website\YTiaCiAS9kJCbgPt7ODkt.jpg'); 
+    background-image: url('YTiaCiAS9kJCbgPt7ODkt.jpg'); /* Relative path */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -33,44 +33,4 @@
 .hero-section p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #fff !important;
-}
-
-.navbar-nav .nav-link {
-    color: #fff !important;
-}
-
-.navbar-nav .nav-link.active {
-    color: #007bff !important;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-ul {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-ul li {
-    margin-bottom: 1rem;
-}
-
-/* Button Style */
-.btn-primary {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
 }
