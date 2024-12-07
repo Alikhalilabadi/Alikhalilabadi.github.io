@@ -8,117 +8,48 @@ body {
     color: #212529;
 }
 
-h1, h2, h3, h4 {
-    font-weight: bold;
-}
-
-/* Navbar */
-.navbar {
-    padding: 1rem;
-}
-
-.nav-link {
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #ffc107; /* Highlight color */
-}
-
-/* Header Banner */
-.header-banner {
-    background-image: url('123.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh; /*height*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    flex-direction: column;
-}
-
-.header-banner h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.header-banner p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    max-width: 800px;
-}
-
-/* Section Styling */
-section {
-    padding: 2rem 0;
-}
-
-.container h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-}
-
-/* Portfolio Cards */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Buttons */
-.btn {
-    transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-.btn-secondary:hover {
-    background-color: #495057;
-    border-color: #495057;
-}
-
-/* Footer */
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-}
-
-/* Calculator Styles */
+/* Calculator Styling */
 .calculator {
     max-width: 400px;
     padding: 1rem;
     border-radius: 10px;
     background: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 .calculator input {
-    height: 3rem;
-    font-size: 1.5rem;
+    height: 60px;
+    font-size: 2rem;
     text-align: right;
     margin-bottom: 1rem;
     border-radius: 5px;
     border: 1px solid #ced4da;
+    background-color: #f1f3f5;
 }
 
 .calculator .btn-group button {
-    height: 3rem;
-    font-size: 1.25rem;
+    height: 60px;
+    font-size: 1.5rem;
     margin: 0.2rem;
     border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: background-color 0.3s ease;
+}
+
+/* Color buttons */
+.calculator .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.calculator .btn-light {
+    background-color: #f8f9fa;
+}
+
+.calculator .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
 }
 
 .calculator .btn-primary {
@@ -131,69 +62,36 @@ footer {
     border-color: #0056b3;
 }
 
-.calculator .btn-danger {
-    background-color: #dc3545;
-    border-color: #dc3545;
+.calculator .btn-light:hover {
+    background-color: #e2e6ea;
+}
+
+.calculator .btn-secondary:hover {
+    background-color: #5a6268;
 }
 
 .calculator .btn-danger:hover {
     background-color: #a71d2a;
-    border-color: #a71d2a;
 }
 
-/* Hero Section (Optional) */
-.hero-section {
-    position: relative;
-    background-image: url("hero-background.jpg"); /* Replace with your image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-}
-
-.hero-section .container {
-    position: relative;
-    z-index: 1; /* Ensures text stays on top of the overlay */
-}
-
-.hero-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.hero-section p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    line-height: 1.8;
+/* Calculator equals button */
+.calculator .btn-primary.w-100 {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 2rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header-banner h1 {
-        font-size: 2rem;
-    }
-
-    .header-banner p {
-        font-size: 1rem;
-    }
-
     .calculator {
         max-width: 100%;
-        padding: 1rem;
+    }
+
+    .calculator input {
+        font-size: 1.8rem;
+    }
+
+    .calculator .btn-group button {
+        font-size: 1.25rem;
     }
 }
