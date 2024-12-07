@@ -3,53 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showcasing My Expertise | Ali Khalilabadi</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Video Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .video-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <span style="font-weight: bold; font-size: 1.5rem; letter-spacing: 2px;">AK</span>
-            <span style="font-size: 1rem; margin-left: 8px; color: #aaa;">Tech Expert</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link active" href="Expertise-Video.html">Expertise-Video</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="text-white text-center py-5" style="background-color: #343a40;">
-        <h1>Showcasing My Expertise</h1>
-        <p>Learn more about my technical skills, experiences, and capabilities.</p>
-    </header>
-
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Watch My Video</h2>
-        <div class="text-center">
-            <video width="100%" height="auto" controls>
-                <a href= url('https://alikhalilabadi.github.io/Assets/Videos/expertise.mp4'); type="video/mp4">Expertise Video</a>
-                Your browser does not support the video tag.
-              </video>              
-        </div>
-        <p class="text-center mt-4">
-            In this video, I delve into my extensive experience in IT, networking, and software development. I highlight key projects, technical skills, and the value I bring to organizations.
-        </p>
-    </section>
-
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Ali Khalilabadi. All Rights Reserved.</p>
-    </footer>
-
-    <script src="bootstrap.bundle.min.js"></script>
+    <div class="video-container">
+        <h1>Expertise Video</h1>
+        <video controls>
+            <source src="https://github.com/Alikhalilabadi/Alikhalilabadi.github.io/tree/master/Assets/Videos/expertise" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </body>
 </html>
