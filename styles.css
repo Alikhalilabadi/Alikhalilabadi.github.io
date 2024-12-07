@@ -1,103 +1,68 @@
 /* General Styles */
 body {
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    text-align: center;
-    background-color: #f4f4f4; /* Default background color */
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
 }
 
-/* Navbar Styles */
-.navbar {
-    padding: 1rem 0;
-    background-color: #343a40;
-}
-
-.navbar .navbar-brand {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.navbar .navbar-nav .nav-link {
-    color: #aaa;
-    padding: 8px 16px;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color: white;
-}
-
-/* Header Banner with Background Image (Only on Home Page) */
-header.header-banner {
-    background-image: url('https://alikhalilabadi.github.io/Assets/Images/123.jpg');
+/* Header with Background Image */
+header {
+    background-image: url('https://alikhalilabadi.github.io/Assets/Images/123.jpg'); /* Add your image URL */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: white;
-    padding: 60px 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: #ffffff;
+    position: relative;
 }
 
-/* Other Header Styles */
-header.header-banner h1 {
+/* Overlay for better text visibility */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+header h1 {
     font-size: 3rem;
-    font-weight: bold;
-}
-
-header.header-banner p {
-    font-size: 1.25rem;
-    margin-top: 20px;
-}
-
-/* Expertise Section */
-.container {
-    padding: 60px 20px;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-/* Portfolio Section */
-section.bg-light {
-    background-color: #f9f9f9;
-    padding: 60px 0;
-}
-
-section.bg-light h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-section.bg-light .btn {
-    font-size: 1.2rem;
-    padding: 10px 20px;
-}
-
-/* Footer */
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
+    z-index: 2;
+    position: relative;
     margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    z-index: 2;
+    position: relative;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
 }
