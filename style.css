@@ -11,14 +11,6 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Background Image */
-body {
-    background-image: url('https://alikhalilabadi.github.io/Assets/Images/123.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 /* Navbar Styles */
 .navbar {
     padding: 1rem 0;
@@ -42,6 +34,11 @@ body {
 
 /* Header Banner */
 header.header-banner {
+    background-image: url('https://alikhalilabadi.github.io/Assets/Images/123.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
     background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text visibility */
     color: white;
     padding: 60px 0;
