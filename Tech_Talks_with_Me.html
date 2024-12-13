@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Tech Talks with Me | Ali Khalilabadi</title>
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
             <span style="font-weight: bold; font-size: 1.5rem; letter-spacing: 2px;">AK</span>
@@ -22,35 +25,33 @@
                 <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link active" href="Tech_Talks_with_Me.html">Tech Talks with Me</a></li>
+            </ul>
         </div>
     </nav>
-    
 
-    <div class="container mt-5">
-        <h1>Contact Me</h1>
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:your.email@example.com">Alikhalilabadi98@gmail.com</a> or fill out the contact form below:</p>
+    <!-- Header Section -->
+    <header style="display: flex; flex-direction: column;" class="bg-dark text-white text-center py-5 header-banner">
+        <h1>Tech Talks with Me</h1>
+        <p>Explore my quick insights into technology, innovation, and expertise.</p>
+    </header>
 
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Your Email</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-    </div>
+    <!-- Main Content -->
+    <section class="container my-5 text-center">
+        <h2 class="mb-4">Welcome to Tech Talks with Me</h2>
+        <p>Take a minute to watch and learn about the highlights of my journey, skills, and solutions I bring to the table.</p>
+        <!-- Video Player -->
+        <div class="mt-4">
+            <video width="720" class="rounded" controls>
+                <source src="./Assets/Videos/expertise.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
 
-    <div class="container mt-3">
-        <a href="about.html" class="btn btn-primary">About Me</a>
-        <a href="portfolio.html" class="btn btn-secondary">Portfolio</a>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Ali Khalilabadi. All Rights Reserved.</p>
+    </footer>
 
     <script src="bootstrap.bundle.min.js"></script>
 </body>
